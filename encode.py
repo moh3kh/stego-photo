@@ -20,13 +20,16 @@ def Main():
 	
 	args = parser.parse_args()
 		
-##Password to lock		
-	if args.text:
+##Password to lock	
+	if args.password:
+		
 		username=getpass.getuser()
 		f = open("/home/"+username+"/Documents/hashed.txt", "w")
 		data = hashlib.md5(args.password).hexdigest()
 		f.write(data)
 		f.close()
+		
+	if args.text:
 		
 		im=Image.open(args.input)
 		im2=stepic.encode(im, args.text)
