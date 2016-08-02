@@ -1,5 +1,5 @@
 
-This simple program uses stepic module to hide(encode)/extract(decode) the data inside/from the png images. By adding authentication and encryption of the data it became more reliable. 
+This simple program uses stepic module to hide(encode)/extract(decode) the data inside/from the png images. By adding authentication password to extract the hidden data, it became more reliable. 
 
 The program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License
 
